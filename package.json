@@ -1,9 +1,9 @@
 {
-  "name": "bajaj",
+  "name": "vercel-express-api",
   "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "start": "vercel dev",
-    "deploy": "vercel deploy --prod"
+  "main": "api/bfhl.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
   }
 }
