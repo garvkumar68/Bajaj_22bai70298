@@ -1,15 +1,12 @@
 {
-    "version": 2,
-    "functions": {
-        "api/*.js": {
-            "memory": 1024,
-            "maxDuration": 10
-        }
-    },
-    "routes": [
-        {
-            "src": "/bfhl",
-            "dest": "/api/bfhl.js"
-        }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/bfhl.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/api/bfhl", "dest": "/api/bfhl.js" }
+  ]
 }
